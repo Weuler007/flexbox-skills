@@ -1,31 +1,58 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: oklch(89.4% 0.057 293.283);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
-}
-/* container */
-.flex-container {
-display: flex;
-flex-direction: column;
-gap: 15px;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-
-}
-.flex-item {
-  /* ativa o display */
-display: flex;
-background-color: oklch(54.1% 0.281 293.009);
-gap: 15px;
-padding: 10px;
-border-radius: 20px;
-width: 100px;
-height: 100px;
-justify-content: center;
-align-items: center;
-font-size: 24px;
-}
+/* título */
 h1 {
   text-align: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #333;
 }
+
+/* container */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* item base */
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: #fff;
+  background-color: oklch(54.1% 0.281 293.009);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* efeito hover */
+.flex-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* variações de cor */
+.html { background-color: #e34c26; }
+.css { background-color: #264de4; }
+.js { background-color: #f7df1e; color: #000; }
+.php { background-color: #777bb3; }
+.mysql { background-color: #00618a; }
+.laravel { background-color: #f05340; }
+.bootstrap { background-color: #563d7c; }
+.tailwind { background-color: #38bdf8; }
+.git { background-color: #f1502f; }
+.github { background-color: #333; }
