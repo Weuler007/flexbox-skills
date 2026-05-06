@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: oklch(89.4% 0.057 293.283);
+
+}
+.flex-container {
+display: flex;
+flex-direction: column;
+gap: 15px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+}
+.flex-item {
+display: flex;
+background-color: oklch(54.1% 0.281 293.009);
+gap: 15px;
+padding: 10px;
+border-radius: 20px;
+width: 100px;
+height: 100px;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+}
+h1 {
+  text-align: center;
+}
